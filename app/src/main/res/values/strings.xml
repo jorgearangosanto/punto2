@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">practicandoparcial1</string>
+    <string name="email">correo electronico</string>
+    <string name="password">contrasena</string>
+    <string name="repassword">repetir contrasena</string>
+    <string name="register">registrar</string>
+    <string name="info">informacion</string>
+    <string name="male">masculino</string>
+    <string name="female">femenino</string>
+    <string name="favorite_genre">generos favoritos</string>
+    <string name="genre_love">amor</string>
+    <string name="genre_terror">terror</string>
+    <string name="genre_suspense">suspenso</string>
+    <string name="genre_comic">humor</string>
+    <string name="genre_accion">accion</string>
+    <string name="genre_adventur">aventura</string>
+    <string name="genre_fiction">ficcion</string>
+    <string name="genre_fantasy">fantasia</string>
+    <string name="genre_drama">drama</string>
+    <string name="date">ingrese  fecha</string>
+    <string name="city">ingrese ciudad</string>
+
+</resources>
