@@ -12,6 +12,7 @@ import java.util.*
 class RegisterActivity2 : AppCompatActivity() {
 
     private lateinit var register2Binding: ActivityRegister2Binding
+    private lateinit var mainviewModel: MainViewModel
     private var fechaNacimiento: String = ""
     private var cal= Calendar.getInstance()
     private var estado =""
@@ -44,6 +45,7 @@ class RegisterActivity2 : AppCompatActivity() {
                 ).show()
 
         }
+
         register2Binding.registerButton.setOnClickListener {
             Log.d( "button" , "clicked")
             val email = register2Binding.emailEditText.text.toString()
@@ -71,14 +73,16 @@ class RegisterActivity2 : AppCompatActivity() {
             if (register2Binding.fictionCheckBox.isChecked)
                 genrefavorite = genrefavorite + "  " + "ficcion"
 
-            if (password == repasword){
+            mainviewModel.validatepasswor(register2Binding.passworeditex.text.toString(),register2Binding.repPassworEditText.text.toString())
+
+            /*if (password == repasword){
                val  info =email +"\n" + password + "\n" +genre+ "\n" + genrefavorite+ "\n" +fechaNacimiento
                 //val info = email.toInt() + password.toInt()
                 register2Binding.infoTextView.text = info.toString()
             }
             else {  Toast.makeText(this,"las contrasenas no son iguale",Toast.LENGTH_LONG).show()
 
-            }
+            }*/
         }
 
     }
